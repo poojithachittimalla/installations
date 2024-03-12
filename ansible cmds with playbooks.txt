@@ -4,18 +4,17 @@ on master:
       sudo apt install python3
       sudo apt-get update
       sudo apt  install ansible
-      ssh ubuntu@172.31.92.167(slave pulic ip)
       ssh-keygen
       cd .ssh
       ls
-      cat id_rsa.pub (this pulic key place o authorized key)
-      ssh ubuntu@172.31.92.167(pub or pvt)
+      cat id_rsa.pub (this pulic key place on authorized key before slave key)
+      ssh ubuntu@172.31.92.167(slave pub or pvt)
       exit
       sudo mkdir /etc/ansible
       sudo vi /etc/ansible/hosts
 
     ex: [webuser]
-        172.31.95.11 (public ip)  
+        172.31.95.11 (slave public ip)  
 
 
       mkdir ansibleplaybooks
