@@ -8,7 +8,7 @@ on master:
       ssh-keygen
       cd .ssh
       ls
-      cat id_rsa.pub
+      cat id_rsa.pub (this pulic key place o authorized key)
       ssh ubuntu@172.31.92.167(pub or pvt)
       exit
       sudo mkdir /etc/ansible
