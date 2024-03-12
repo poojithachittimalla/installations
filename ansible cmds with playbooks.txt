@@ -1,7 +1,7 @@
 ubuntu:
 on master:
 --------- 
-      python install
+      sudo apt install python3
       sudo apt-get update
       sudo apt  install ansible
       ssh ubuntu@172.31.92.167
